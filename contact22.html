@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lethukuphila Foundation - Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Link to the external CSS file -->
+    <script type="text/javascript" src="form-validation.js"></script>
+    <script>
+        function clearField(field) {
+            if (field.value === field.defaultValue) {
+                field.value = '';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="contact-header">
+        <div class="logo-link">
+            <a href="Home44.html">
+
+            </a>
+        </div>
+        
+    </div>
+    <header>
+        <a href="home.html"> <!-- Add the anchor tag around the logo -->
+            <img src="images/logo.png" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="home44.html">Home</a></li>
+                <li><a href="about11.html">About Us</a></li>
+                <li><a href="programs55.html">Our Programs</a></li>
+                <li><a href="gallery33.html">Gallery</a></li>
+                <li><a href="contact22.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contentC">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or inquiries, please feel free to contact us</p>
+
+        <!-- Add the contact form -->
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="Your Name" onclick="clearField(this)">
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" value="Your Email" onclick="clearField(this)">
+
+            <label for="PhoneNumber">Phone Number:</label>
+            <input type="text" id="PhoneNumber" name="PhoneNumber" value="Your Phone Number" onclick="clearField(this)">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2023 Lethukuphila Foundation. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
