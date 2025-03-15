@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lethukuphila Foundation</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <div class="contact-header" style="background-color: #6fa2e4; color: white; text-align: left; padding: 1rem 1rem 1rem 2rem; display: flex; justify-content: space-between; align-items: center; height: 2cm;">
+        <div class="logo-link">
+            <a href="home.html">
+                <img src="images/logo.png" class="logo" style="width: 100px; margin-right: 1rem;">
+            </a>
+        </div>
+        <div class="contact-details">
+            <p><strong>Phone:</strong> <a href="tel:0677590951" style="color: white;">067 759 0951</a></p>
+            <p><strong>Email:</strong> <a href="mailto:lethukuphilafoundation@sa.com" style="color: white;">lethukuphilafoundation@sa.com</a></p>
+            <p><strong>Location:</strong> <a href="https://www.google.com/maps/place/South+Africa,+Johannesburg" style="color: white;">South Africa, Johannesburg</a></p>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <table cellspacing="50">
+                <tr>
+                    <td><a href="home.html" class="nav-link">Home</a></td>
+                    <td><a href="about.html" class="nav-link">About Us</a></td>
+                    <td><a href="programs.html" class="nav-link">Our Programs</a></td>
+                    <td><a href="gallery.html" class="nav-link">Gallery</a></td>
+                    <td><a href="contact.html" class="nav-link">Contact Us</a></td>
+                </tr>
+            </table>
+        </nav>
+    </header>
+   
+    <div class="welcome">
+        <div class="banner">
+            <img src="images/child1.jpg">
+                  
+        </div>
+        <h1>Welcome to Lethukuphila Foundation</h1>
+        </div>
+        <div class="welcome-bio">
+            
+            <p>Our foundation was born out of a deep commitment to making a positive impact on the lives of those we serve. Founded with a vision to uplift and empower, the Lethukuphila Foundation stands as a beacon of hope and change.</p>
+            <p>Driven by our passion for transformation and growth, we are dedicated to making a difference in our community. Through our diverse programs and unwavering dedication, we strive to create a brighter future for all.</p>
+            <p>Join us on this journey of empowerment and progress. Together, we can shape a better tomorrow for generations to come.</p>
+        </div>
+
+        
+    </div>
+    <h1 class="center">Sponsors</h1>
+        <h2 class="center">How can you help ?</h2>
+        <div class="column-container">
+            <div class="column">
+                <h3>Financial / Monthly Contributions to Sponsor a Child</h3>
+                <p>Contribute financially on a monthly basis to sponsor a child's education, healthcare, and well-being.</p>
+            </div>
+            <div class="column">
+                <h3>Monthly Donations</h3>
+                <p>Make monthly donations to support our programs and initiatives that empower disabled children.</p>
+            </div>
+            <div class="column">
+                <h3>List of Necessities</h3>
+                <p>Provide essential items and necessities for disabled children, including clothing, school supplies, and more.</p>
+            </div>
+            <div class="column">
+                <h3>Donate with PayPal</h3>
+                <p>Conveniently make donations using PayPal, ensuring a secure and seamless transaction process.</p>
+                </div>
+                </div>
+        
+    <footer>
+        <p>&copy; 2023 Lethukuphila Foundation. All rights reserved.</p>
+    </footer>
+    <script>
+        const banner = document.querySelector('.banner');
+        const images = banner.querySelectorAll('img');
+        let currentImage = 0;
+
+        function changeImage(direction) {
+            banner.innerHTML = ''; // Clear the banner container
+            if (direction === 'left') {
+                currentImage = (currentImage - 1 + images.length) % images.length;
+            } else {
+                currentImage = (currentImage + 1) % images.length;
+            }
+            banner.appendChild(images[currentImage]); // Append the current image
+        }
+    </script>
+</body>
+</html>
