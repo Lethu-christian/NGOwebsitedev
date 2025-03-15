@@ -6,7 +6,7 @@ Driven by our passion for transformation and growth, we are dedicated to making 
 
 Join us on this journey of empowerment and progress. Together, we can shape a better tomorrow for generations to come.
 
-Unzip images folder befor running the website
+Unzip images folder before running the website
 
 copyrights reserved to Lethukuphila Nkomo
 
